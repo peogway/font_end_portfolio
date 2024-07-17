@@ -1,14 +1,17 @@
 {
-  "name": "front-end-software-development-skills",
+  "name": "font_end_portfolio",
   "version": "1.0.0",
   "description": " responsive portfolio website",
   "main": "index.js",
+  "homepage": "https://peogway.github.io/font_end_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "beo",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0"
   }
 }

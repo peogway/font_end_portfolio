@@ -41,7 +41,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
   &.show {
     visibility: visible;
@@ -57,12 +56,14 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
+    border-radius: 3%;
   }
   // Nav Side
   &-nav {
+    opacity: 0.9;
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 8);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -75,6 +76,8 @@
 
   // Branding Side
   &-branding {
+    opacity: 0.96;
+
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -85,8 +88,10 @@
     }
 
     .portrait {
-      width: 250px;
-      height: 250px;
+      opacity: 1;
+
+      width: 400px;
+      height: 400px;
       background: url("../img/portrait.jpg");
       background-size: cover;
       border-radius: 50%;
@@ -111,7 +116,7 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 50px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
