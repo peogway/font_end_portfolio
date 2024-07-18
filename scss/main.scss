@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "slides";
 
 html {
   font-size: 14px;
@@ -132,7 +133,6 @@ main {
     color: $secondary-color;
   }
 }
-@import "slides";
 // Work/Projects
 .projects {
   display: grid;
